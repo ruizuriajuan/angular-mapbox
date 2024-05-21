@@ -1,0 +1,7 @@
+side-menu{
+    position: fixed;
+    top: 20 px;
+    left: 20px;
+    width: 200 px;
+    z-index: 999;
+}

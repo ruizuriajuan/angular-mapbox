@@ -1,0 +1,12 @@
+<div class="card flex justify-content-center">
+    <p-listbox optionLabel="name" 
+    [options]="itemsMenu" 
+    [listStyle]="{ 'max-height': '250px' }">
+        <ng-template let-item pTemplate="item">
+            <div class="flex align-items-center gap-2 w-full" [routerLink]="[item.ruta]" routerLinkActive="active">
+                <span class={{item.icon}}></span>
+                <span>{{ item.name }}</span>
+            </div>
+        </ng-template>
+    </p-listbox>
+</div>

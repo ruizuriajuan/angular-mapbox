@@ -1,0 +1,9 @@
+<div #map>
+    <div class="card flex justify-content-center">
+        <div class="floating-range p-3">
+            <span class="flex justify-content-center flex-wrap ">zoom : {{zoom | number: '2.2-4'}}</span>
+            <span class="flex justify-content-center flex-wrap text-xs">{{lngLat}}</span>
+            <p-slider min="0" max="22"  [(ngModel)]="zoom" (onChange)="zoomChanged(zoomInput.value || 0)" #zoomInput />
+        </div>
+    </div>
+</div>

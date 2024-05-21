@@ -1,0 +1,20 @@
+<div class="surface-card shadow-3 border-round p-4 mt-4">
+    <div class="text-center mb-5">
+        <img src="assets/csa/logo.png" alt="Image" height="50" class="mb-3">
+        <div class="text-900 text-3xl font-medium mb-3">Recuperar cuenta</div>
+    </div>
+
+    <div class="flex flex-column">
+        <p-iconField iconPosition="left">
+            <p-inputIcon styleClass="pi pi-pencil" />
+            <input pInputText type="text" placeholder="Código" class="w-full mb-3" />
+        </p-iconField>
+        <p-password [inputStyle]="{'width': '100%'}" [style]="{'width': '100%'}"  class="mb-3" [toggleMask]="true" placeholder="Nueva Contraseña" />
+        <p-password [inputStyle]="{'width': '100%'}" [style]="{'width': '100%'}"  class="mb-3" [toggleMask]="true" placeholder="Confirmar Contraseña" />       
+    </div>
+    <div class="flex justify-content-between flex-wrap">
+        <p-button label="Cancelar" [rounded]="true" class="flex justify-content-center m-3" [routerLink]="['/auth']" routerLinkActive="router-link-active" />
+        <p-button label="Crear" [rounded]="true" icon="pi pi-user" class="flex justify-content-center m-3"/>
+    </div>
+        
+</div>

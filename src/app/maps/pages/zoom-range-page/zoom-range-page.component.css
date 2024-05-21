@@ -1,0 +1,21 @@
+div {
+    width: 100vw;
+    height: 100vh;
+}
+
+.floating-range {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    height: 100PX;
+    width: 200px;
+    background-color: rgba(13, 13, 14, 0.705);
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.floating-content {
+    display: flex;
+    align-items: center;
+}
